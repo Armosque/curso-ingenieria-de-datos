@@ -9,7 +9,6 @@ Antes de iniciar, asegúrate de tener instaladas las siguientes herramientas en 
 | Herramienta | Descripción | Enlace de descarga |
 |--------------|--------------|-------------------|
 | **Git** | Control de versiones y colaboración en código. | [https://git-scm.com/downloads](https://git-scm.com/downloads) |
-| **Python 3.10+** | Lenguaje principal del curso. | [https://www.python.org/downloads/](https://www.python.org/downloads/) |
 | **Anaconda o Miniconda** | Administración de entornos y paquetes. | [https://www.anaconda.com/](https://www.anaconda.com/) |
 | **Visual Studio Code** | Editor de código recomendado. | [https://code.visualstudio.com/](https://code.visualstudio.com/) |
 
@@ -22,7 +21,9 @@ Antes de iniciar, asegúrate de tener instaladas las siguientes herramientas en 
 | **Apache Airflow** | Orquestador de pipelines. | `pip install apache-airflow` |
 | **PostgreSQL** | Base de datos relacional para prácticas. | [Descargar PostgreSQL](https://www.postgresql.org/download/) |
 | **DBeaver o TablePlus** | Cliente SQL visual. | [DBeaver.io](https://dbeaver.io/) |
-| **AWS CLI (opcional)** | Acceso a servicios cloud. | `pip install awscli` |
+| **DataGrio (Opcional)** | Cliente SQL visual(Preferido personal, si tiene un correo educativo puede aplicar a la licencia) | [DBeaver.io](https://dbeaver.io/) |
+
+| **AWS CLI** | Acceso a servicios cloud. | `pip install awscli` |
 
 ---
 
