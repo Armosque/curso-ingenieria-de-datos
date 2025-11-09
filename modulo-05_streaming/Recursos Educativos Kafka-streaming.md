@@ -3,8 +3,6 @@
 Este doc reúne repositorios prácticos para aprender Kafka desde cero y montar pipelines de datos de punta a punta (producers/consumers, stream processing, CDC con Kafka Connect/Debezium, UIs de observabilidad, y despliegues en AWS/MSK). Incluye ejemplos de **ML en streaming** (Kafka Streams y TensorFlow/MQTT).
 
 
----
-
 ## Setup rápido (Docker Compose)
 
 ```bash
@@ -33,15 +31,13 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic demo.events
 # Consumer\ nkafka-console-consumer --bootstrap-server localhost:9092 --topic demo.events --from-beginning
 ```
 
----
 
 ## Stream processing
 
-### A) Kafka Streams (Java)
+### A) Kafka Streams 
 
   * [confluentinc/examples](https://github.com/confluentinc/examples)
   * [kaiwaehner/kafka-streams-machine-learning-examples](https://github.com/kaiwaehner/kafka-streams-machine-learning-examples)
-
 
 ### B) Flink SQL
 
@@ -51,14 +47,12 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic demo.events
 
 * Ver ejemplos en [apache/spark](https://github.com/apache/spark) (docs/`examples/src/main`)
 
----
 
 ## CDC con Debezium / Kafka Connect
 
 * **Ejecuta ejemplos**: [debezium/debezium-examples](https://github.com/debezium/debezium-examples)
 * **Datos sintéticos**: [confluentinc/kafka-connect-datagen](https://github.com/confluentinc/kafka-connect-datagen)
 
----
 
 ## UIs para observar y depurar
 
@@ -67,7 +61,6 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic demo.events
 
 En ambas puedes ver: topics, mensajes, keys, consumer lag, offsets, y probar produce/consume.
 
----
 
 ## AWS / MSK y Flink gestionado
 
@@ -75,13 +68,11 @@ En ambas puedes ver: topics, mensajes, keys, consumer lag, offsets, y probar pro
 * **Managed Flink (Kinesis/MSK)**: [aws-samples/amazon-managed-service-for-apache-flink-examples](https://github.com/aws-samples/amazon-managed-service-for-apache-flink-examples)
 
 
----
-
 ## ML + IoT en streaming
 
 * **IoT/MQTT + TensorFlow + Kafka**: [kaiwaehner/hivemq-mqtt-tensorflow-kafka-realtime-iot-machine-learning-training-inference](https://github.com/kaiwaehner/hivemq-mqtt-tensorflow-kafka-realtime-iot-machine-learning-training-inference)
 
-  * Pipeline fin‑a‑fin: ingestión MQTT (HiveMQ) → Kafka → entrenamiento/inferencia TF.
+  * Pipeline endd‑a‑end: ingestión MQTT (HiveMQ) - Kafka - entrenamiento/inferencia TF.
 * **Kafka Streams + ML**: [kaiwaehner/kafka-streams-machine-learning-examples](https://github.com/kaiwaehner/kafka-streams-machine-learning-examples)
 
   * Patrones de feature engineering y scoring embebidos en topologías Kafka Streams.
