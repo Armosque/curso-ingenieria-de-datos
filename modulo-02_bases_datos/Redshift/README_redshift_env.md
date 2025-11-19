@@ -29,7 +29,7 @@ Los notebooks y scripts esperan las siguientes variables:
 - `REDSHIFT_PASSWORD`  
   Contraseña del usuario
 
-> ⚠️ **No publiques estas variables en GitHub** ni las subas a repositorios compartidos.  
+> **No publiques estas variables en GitHub** ni las subas a repositorios compartidos.  
 > Mantén tus credenciales locales o en un gestor de secretos.
 
 ---
@@ -40,7 +40,7 @@ Los notebooks y scripts esperan las siguientes variables:
 2. Exporta las variables de entorno:
 
 ```bash
-export REDSHIFT_HOST="TU-ENDPOINT.redshift.amazonaws.com"
+export REDSHIFT_HOST="ENDPOINT.redshift.amazonaws.com"
 export REDSHIFT_PORT="5439"
 export REDSHIFT_DB="dev"
 export REDSHIFT_USER="tu_usuario"
@@ -78,7 +78,7 @@ source ~/.zshrc
 2. Define las variables:
 
 ```bat
-set REDSHIFT_HOST=TU-ENDPOINT.redshift.amazonaws.com
+set REDSHIFT_HOST=ENDPOINT.redshift.amazonaws.com
 set REDSHIFT_PORT=5439
 set REDSHIFT_DB=dev
 set REDSHIFT_USER=tu_usuario
@@ -101,7 +101,7 @@ Las variables aplican solo para esa ventana de CMD.
 2. Define las variables:
 
 ```powershell
-$env:REDSHIFT_HOST = "TU-ENDPOINT.redshift.amazonaws.com"
+$env:REDSHIFT_HOST = "ENDPOINT.redshift.amazonaws.com"
 $env:REDSHIFT_PORT = "5439"
 $env:REDSHIFT_DB = "dev"
 $env:REDSHIFT_USER = "tu_usuario"
@@ -128,7 +128,7 @@ En una celda de Python:
 ```python
 import os
 
-os.environ["REDSHIFT_HOST"] = "TU-ENDPOINT.redshift.amazonaws.com"
+os.environ["REDSHIFT_HOST"] = "ENDPOINT.redshift.amazonaws.com"
 os.environ["REDSHIFT_PORT"] = "5439"
 os.environ["REDSHIFT_DB"] = "dev"
 os.environ["REDSHIFT_USER"] = "tu_usuario"
