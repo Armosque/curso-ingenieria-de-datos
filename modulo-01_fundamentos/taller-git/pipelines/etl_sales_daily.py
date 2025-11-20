@@ -4,7 +4,7 @@ Pequeño pipeline de ejemplo para el taller de Git orientado a Ingeniería de Da
 Este script no pretende ser un ETL completo; solo da contexto.
 Ahora usa pandas para facilitar transformaciones y filtrados.
 """
-
+# Esta es una prueba 
 from pathlib import Path
 import pandas as pd
 
@@ -36,12 +36,11 @@ def run_etl(input_file: Path = INPUT_FILE, output_file: Path = OUTPUT_FILE) -> N
         return
 
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
-
+    df["amount"] = pd.to_numeric(df["amount"], errors="coerce" #test )
+    )
     # Regla de limpieza muy básica: ignorar montos negativos o no numéricos
     df_clean = df[df["amount"] >= 0].copy()
 
-    # Opcional: eliminar filas donde 'amount' sea NaN
-    df_clean = df_clean.dropna(subset=["amount"])
 
     if df_clean.empty:
         print("No hay filas válidas para procesar después de la limpieza.")
