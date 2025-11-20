@@ -36,7 +36,8 @@ def run_etl(input_file: Path = INPUT_FILE, output_file: Path = OUTPUT_FILE) -> N
         return
 
     df["amount"] = pd.to_numeric(df["amount"], errors="coerce")
-
+    df["amount"] = pd.to_numeric(df["amount"], errors="coerce" #test )
+    )
     # Regla de limpieza muy básica: ignorar montos negativos o no numéricos
     df_clean = df[df["amount"] >= 0].copy()
 
