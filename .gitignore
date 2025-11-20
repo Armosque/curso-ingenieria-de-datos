@@ -209,7 +209,7 @@ __marimo__/
 
 # Datos y formatos comunes
 # Tabulares
-*.csv
+# *.csv
 *.tsv
 *.xls
 *.xlsx
@@ -232,7 +232,7 @@ __marimo__/
 *.db
 *.mdb
 *.accdb
-*.sql
+# *.sql
 *.dump
 *.bak
 
